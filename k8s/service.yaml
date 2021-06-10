@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: manabu-matsui-live-pfs
+    app.kubernetes.io/instance: manabu-matsui-live-pfs
+    app.kubernetes.io/name: manabu-matsui-live-pfs
+  name: manabu-matsui-live-pfs
+spec:
+  ports:
+    - name: http
+      port: 80
+      protocol: TCP
+      targetPort: 3000
+  selector:
+    app.kubernetes.io/instance: manabu-matsui-live-pfs
+    app.kubernetes.io/name: manabu-matsui-live-pfs
+  sessionAffinity: None
+  type: ClusterIP
