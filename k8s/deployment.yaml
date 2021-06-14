@@ -1,9 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  annotations:
-    app.openshift.io/vcs-ref: f7580aa1eb6f7176705176e201ecff4de93edafb
-    app.openshift.io/vcs-uri: https://github.com/asmanabu/tkn-node-sampe-app
   labels:
     app: manabu-matsui-live-pfs
     app.kubernetes.io/instance: manabu-matsui-live-pfs
