@@ -8,6 +8,7 @@ metadata:
     app.openshift.io/runtime: js
   name: manabu-matsui-live-pfs
 spec:
+  serviceAccountName: build-bot
   progressDeadlineSeconds: 600
   replicas: 1
   revisionHistoryLimit: 10
